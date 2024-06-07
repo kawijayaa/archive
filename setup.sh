@@ -3,16 +3,13 @@
 rm -rf v1 v2 v3 v4 v5 kawijayaa.github.io_old kawijayaa_vue muhammadoka.dev
 
 # v1
-git clone git@github.com:kawijayaa/kawijayaa.github.io_old.git
-mv kawijayaa.github.io_old v1
+git clone git@github.com:kawijayaa/kawijayaa.github.io_old.git v1
 
 # v2
-git clone git@github.com:kawijayaa/kawijayaa_vue.git
-mv kawijayaa_vue v2
+git clone git@github.com:kawijayaa/kawijayaa_vue.git v2
 
 # create directories for v3-v5
-git clone git@github.com:kawijayaa/muhammadoka.dev.git
-mv muhammadoka.dev v3
+git clone git@github.com:kawijayaa/muhammadoka.dev.git v3
 cp -r v3 v4
 cp -r v3 v5
 
