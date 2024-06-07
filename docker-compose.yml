@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  v1:
+    build: 
+      context: ./v1/
+      dockerfile: ../dockerfiles/simplehttp.Dockerfile
+    ports:
+      - "9000:8080"
+  v2:
+    build: 
+      context: ./v2/
+      dockerfile: ../dockerfiles/oldvue.Dockerfile
+    ports:
+      - "9001:8080"
+  v3:
+    build: 
+      context: ./v3/
+      dockerfile: ../dockerfiles/nextjs.Dockerfile
+    ports:
+      - "9002:3000"
+  v4:
+    build: 
+      context: ./v4/
+      dockerfile: ../dockerfiles/nextjs.Dockerfile
+    ports:
+      - "9003:3000"
+  v5:
+    build: 
+      context: ./v5/
+      dockerfile: ../dockerfiles/newvue.Dockerfile
+    ports:
+      - "9004:8080"
