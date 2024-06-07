@@ -1,0 +1,23 @@
+archive.muhammadoka.dev {
+    reverse_proxy localhost:8080
+}
+
+v1.archive.muhammadoka.dev {
+    reverse_proxy localhost:9000
+}
+
+v2.archive.muhammadoka.dev {
+    reverse_proxy localhost:9001
+}
+
+v3.archive.muhammadoka.dev {
+    reverse_proxy localhost:9002
+}
+
+v4.archive.muhammadoka.dev {
+    reverse_proxy localhost:9003
+}
+
+v5.archive.muhammadoka.dev {
+    reverse_proxy localhost:9004
+}
