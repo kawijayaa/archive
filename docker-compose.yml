@@ -1,5 +1,11 @@
 version: '3.9'
 services:
+  main:
+    build: 
+      context: ./main/
+      dockerfile: ../dockerfiles/nextjs.Dockerfile
+    ports:
+      - "8080:3000"
   v1:
     build: 
       context: ./v1/
