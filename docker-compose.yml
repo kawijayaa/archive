@@ -15,15 +15,15 @@ services:
   v2:
     build: 
       context: ./v2/
-      dockerfile: ../dockerfiles/oldvue.Dockerfile
+      dockerfile: ../dockerfiles/simplehttp.Dockerfile
     ports:
       - "9001:8080"
   v3:
     build: 
       context: ./v3/
-      dockerfile: ../dockerfiles/nextjs.Dockerfile
+      dockerfile: ../dockerfiles/oldvue.Dockerfile
     ports:
-      - "9002:3000"
+      - "9002:8080"
   v4:
     build: 
       context: ./v4/
@@ -33,6 +33,12 @@ services:
   v5:
     build: 
       context: ./v5/
+      dockerfile: ../dockerfiles/nextjs.Dockerfile
+    ports:
+      - "9004:3000"
+  v6:
+    build: 
+      context: ./v6/
       dockerfile: ../dockerfiles/newvue.Dockerfile
     ports:
-      - "9004:8080"
+      - "9005:8080"
