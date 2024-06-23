@@ -19,6 +19,11 @@ pushd v1
     git checkout 69d70241b597346a3883d525db677dbe3d35b45f
 popd
 
+# v2
+pushd v2
+    git checkout 69d70241b597346a3883d525db677dbe3d35b45f
+popd
+
 # v4
 pushd v4
     git checkout 7509ed7edc453bb39968034194e4ac0b80be39eb
